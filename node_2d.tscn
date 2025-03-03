@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://l82jmrlasgks"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_knedh"]
+[ext_resource type="Script" path="res://line_edit.gd" id="2_ml2qq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_knedh")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 251.0
+offset_top = 139.0
+offset_right = 490.0
+offset_bottom = 170.0
+script = ExtResource("2_ml2qq")
