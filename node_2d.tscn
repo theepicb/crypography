@@ -1,16 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://l82jmrlasgks"]
 
-[ext_resource type="Script" path="res://node_2d.gd" id="1_knedh"]
-[ext_resource type="Script" path="res://line_edit.gd" id="2_ml2qq"]
+[ext_resource type="Script" path="res://Node2D.gd" id="1_0iab1"]
+[ext_resource type="Script" path="res://LineEdit.gd" id="2_5i2po"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" type="Node2D" parent="."]
-script = ExtResource("1_knedh")
+script = ExtResource("1_0iab1")
 
 [node name="LineEdit" type="LineEdit" parent="."]
-offset_left = 251.0
-offset_top = 139.0
-offset_right = 490.0
-offset_bottom = 170.0
-script = ExtResource("2_ml2qq")
+offset_right = 67.0625
+offset_bottom = 31.0
+script = ExtResource("2_5i2po")
