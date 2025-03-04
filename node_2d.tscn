@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://l82jmrlasgks"]
+[gd_scene load_steps=4 format=3 uid="uid://l82jmrlasgks"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_0iab1"]
 [ext_resource type="Script" path="res://LineEdit.gd" id="2_5i2po"]
+[ext_resource type="Script" path="res://button.gd" id="4_fsrak"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,3 +13,17 @@ script = ExtResource("1_0iab1")
 offset_right = 67.0625
 offset_bottom = 31.0
 script = ExtResource("2_5i2po")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_fsrak")
