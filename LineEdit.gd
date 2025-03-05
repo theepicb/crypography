@@ -12,8 +12,8 @@ func _ready () :
 func _input(ev):
 	if Input.is_key_pressed(KEY_ENTER) :
 		print($".".text)
-		$".".clear()
 		checkText($".".text)
+		$".".clear()
 		pass
 	pass
 	
@@ -39,15 +39,19 @@ func is_filename_in_file(target_filename: String, file_path: String) -> bool:
 	
 	pass
 	
-func checkText(text):
-	if text == "red herring":
+func checkText (text):
+	print(text)
+	if str(text) == "red herring":
+		print("inputed")
 		if challange1 == false:
 			challange1 = true
 			var cert1 = Label.new()
 			cert1.text = "challange 1: red herring"
 			cert1.add_theme_color_override("font_color", "green")
-			cert1.position.x = 50
-			cert1.position.y = get_viewport_rect().size.y / 2 + 200
+			cert1.anchor_left = 0
+			cert1.position.x = 0
+			cert1.position.y = get_viewport_rect().size.y / 2 - 80
+			print(cert1.position)
 			add_child(cert1)
 			print("made")
 		pass
