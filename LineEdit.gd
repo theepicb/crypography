@@ -1,8 +1,8 @@
 extends LineEdit
-var challange1 = false
-var challange2 = false
-var challange3 = false
-var challange4 = false
+var challenge1 = false
+var challenge2 = false
+var challenge3 = false
+var challenge4 = false
 
 func _ready () :
 	print(DisplayServer.screen_get_size())
@@ -45,10 +45,10 @@ func is_filename_in_file(target_filename: String, file_path: String) -> bool:
 func checkText(text):
 	#in txt file
 	if text == "red herring":
-		if challange1 == false:
-			challange1 = true
+		if challenge1 == false:
+			challenge1 = true
 			var cert1 = Label.new()
-			cert1.text = "challange 1: red herring"
+			cert1.text = "challenge 1: red herring"
 			cert1.add_theme_color_override("font_color", "green")
 			cert1.position.x = -30
 			cert1.position.y = get_viewport_rect().size.y / 2 - 150
@@ -57,10 +57,10 @@ func checkText(text):
 			pass
 		pass
 	if text == "he chose you":
-		if challange2 == false:
-			challange2 = true
+		if challenge2 == false:
+			challenge2 = true
 			var cert2 = Label.new()
-			cert2.text = "challange 2: many uses for a key"
+			cert2.text = "challenge 2: many uses for a key"
 			cert2.add_theme_color_override("font_color", "orange")
 			cert2.position.x = -30
 			cert2.position.y = get_viewport_rect().size.y / 2 - 120
@@ -70,10 +70,10 @@ func checkText(text):
 		pass
 		#clock puzzle
 	if text == "he was seen here first":
-		if challange3 == false:
-			challange3 = true
+		if challenge3 == false:
+			challenge3 = true
 			var cert3 = Label.new()
-			cert3.text = "challange 3: clocks"
+			cert3.text = "challenge 3: clocks"
 			cert3.add_theme_color_override("font_color", "red")
 			cert3.position.x = -30
 			cert3.position.y = get_viewport_rect().size.y / 2 - 90
@@ -83,10 +83,10 @@ func checkText(text):
 		pass
 	#corrupted file
 	if text == "iacchus lives":
-		if challange4 == false:
-			challange4 = true
+		if challenge4 == false:
+			challenge4 = true
 			var cert4 = Label.new()
-			cert4.text = "challange 4: crosswords"
+			cert4.text = "challenge 4: crosswords"
 			cert4.add_theme_color_override("font_color", "red")
 			cert4.position.x = -30
 			cert4.position.y = get_viewport_rect().size.y / 2 - 60
