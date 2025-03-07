@@ -5,7 +5,7 @@ This is a fun little side project to test my programming skills and also tests V
 all files to do with this challenge will appear here. challenges my include decryption, searching for data and file management/alteration (only to file contained in this file of course)
 good luck and have fun.
 
-P.S. there are extra hidden cyphers that extra hidden that wont move the story but will give you a trophy :)
+P.S. there are extra hidden cyphers that are extra hidden that wont move the story but will give you a trophy :)
 
 
 
