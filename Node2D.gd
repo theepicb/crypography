@@ -17,7 +17,7 @@ func _ready() :
 		pass
 	$"../Button".step = step
 	$"../Button".createDialogueBox(step)
-	#move_file_to_desktop("res://A_strange_painting.jpg", (OS.get_system_dir(0) + "/kryptos/saturn.jpg"))
+
 	
 	 
 	save_data()
@@ -60,5 +60,6 @@ func load_data():
 		return data
 	else:
 		save_data()
+		load_data()
 		pass
 		
